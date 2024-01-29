@@ -9,6 +9,8 @@
       href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400&family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,600;1,9..144,700&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Poppins:ital,wght@0,300;1,200&family=Space+Mono:ital@0;1&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link href="/src/output.css" rel="stylesheet" />
     <title>Document</title>
   </head>
@@ -49,7 +51,7 @@
       <!-- about section of what Samurai is -->
       <section id="about-king-resting" class="flex flex-col mt-2 gap-8 md:flex md:flex-row">
         <div id="about-sec" class="md:w-1/2 ">
-        <h6 class="font-semibold my-2">About Samurai King Resting</h6>
+        <h6 class="w-full text-3xl text-center md:text-md font-semibold my-2">About Samurai King Resting</h6>
           <p class=" text-sm my-2">
             So how did the classical Latin become so incoherent? According to McClintock, a 15th century typesetter likely scrambled part of Cicero's De Finibus in order to provide placeholder text to mockup various fonts for a type specimen book.So how did the classical Latin become so incoherent?
            According to McClintock, a 15th century typesetter likely scrambled part of Cicero's De Finibus in order to provide placeholder
@@ -72,23 +74,129 @@
         </div>
       </section>
 
-      <!-- photograph section -->
-      <section id="Breadcrumbs">
-        <div id="breadCrumbs">
-          <div class="header" class="py-2 px-3">
-            <div id="left-header">
-              <ul>
-              <li>Photography</li>
-              <li>Premium Photos</li>
-            </ul>
-            <i class="fa fa-sliders" aria-hidden="true"></i>
-            </div>
-            <!--  -->
-            <div id="right-header">
+        <hr>
 
+      <!-- photograph section -->
+      <section id="Breadcrumbs" class="mt-4">
+        <div id="breadCrumbs" class="">
+          <div id="header" class="flex flex-row justify-between ">
+            <div id="left-header">
+              <ul class="flex flex-row gap-4">
+              <li class="text-md font-bold text-md">Photography</li>
+              <span class="font-bold text-3xl">/</span>
+              <li class="hover:text-gray-400 cursor-pointer font-bold" id="prem">Premium Photos</li>
+            </ul>
             </div>
+
+            <!-- sort -->
+            <div id="right-header" class="hidden md:flex md:flex-row gap-2">
+            <span><img src="/asset/data-image.png" alt="Sort icon-image" class="h-3 mt-2" > </span>
+            <p class="text-gray-400" >sort by</p>
+            <span class="hover:text-green-300 cursor-pointer"><i class="fa fa-chevron-down" aria-hidden="true"></i></span> 
+            </div>
+            <span class="block md:hidden cursor-pointer text-lg"><i class="fa fa-sliders" aria-hidden="true"></i></span>
           </div>
         </div>
+
+        <!-- check box and photo grid main -->
+        <div id="category">
+          <!-- checkbox div -->
+        <div id="checks">
+          <p>Category</p>
+
+          <div id="checkx">
+            <div id="1-peopl">
+            <input type="checkbox" name="people" id="">
+            <label for="people">People</label>
+            </div>
+
+            <!-- People check box -->
+            <div id="1-people">
+            <input type="checkbox" name="people" id="">
+            <label for="people">People</label>
+            </div>
+
+            <!-- Premium check box -->
+            <div id="2-premium">
+            <input type="checkbox" name="premium" id="">
+            <label for="premium">Premium</label>
+            </div>
+
+            <!-- Pet checkbox -->
+            <div id="3-pets">
+            <input type="checkbox" name="pets" id="">
+            <label for="pets">Pets</label>
+            </div>
+
+            <!-- food check box -->
+            <div id="4-food">
+            <input type="checkbox" name="food" id="">
+            <label for="food">Food</label>
+            </div>
+
+            <!-- landmark checkbox -->
+            <div id="landmark">
+            <input type="checkbox" name="landmark" id="">
+            <label for="landmark">People</label>
+            </div>
+
+            <!-- client checkbox -->
+            <div id="clients">
+            <input type="checkbox" name="clients" id="">
+            <label for="clients">People</label>
+            </div>
+
+            <!-- nature check box -->
+            <div id="nature">
+            <input type="checkbox" name="nature" id="">
+            <label for="nature">People</label>
+            </div>
+
+            <hr>
+
+            <p>Price range</p>
+
+            <!-- price range -->
+            <div id="price-range">
+            <!-- first price range -->
+            <div id="low">
+            <input type="checkbox" name="low" id="">
+            <label for="low">Lower than $20</label>
+            </div>
+
+            <!-- 2nd price rang $20-$100-->
+            <div id="range-2">
+            <input type="checkbox" name="range-2" id="">
+            <label for="range-2">$20 - $100</label>
+            </div>
+
+            <!-- $100 - $200 -->
+            <div id="range-3">
+            <input type="checkbox" name="range-3" id="">
+            <label for="range-3">$100 - $200</label>
+            </div>
+
+            <!-- range $200 and above -->
+            <div id="range-4">
+            <input type="checkbox" name="range-4" id="">
+            <label for="range-4">More than $200</label>
+            </div>
+
+            </div>
+
+          </div>
+        </div>
+
+
+
+
+
+        <!-- grid box display of photos -->
+        <div id="pict-main">
+
+        </div>
+        </div>
+        
       </section>
     </main>
   </body>
