@@ -32,13 +32,13 @@
         <div class="mt-4">
       <hr class="">
         </div>
-        <div id="top-section" class="flex flex-row justify-between mt-2">
+        <div id="top-section" class="flex flex-row justify-between mt-4">
           <p class="font-bold text-4xl text-center md:text-md md:text-left ">Samurai King Resting</p>
           <button class="hidden md:block bg-black text-white p-2 md:w-36">Add to Cart</button>
         </div>
 
         <!-- hero section -->
-       <section id="hero" class="relative mt-3">
+      <section id="hero" class="relative mt-4">
         <img src="/asset/pexels-evgeny-tchebotarev-2187304 (1) 1.png" alt="Dog image" />
         <figcaption class="absolute bottom-0 left-0 bg-white text-sm p-1">Photo of the day</figcaption>      
       </section>
@@ -99,10 +99,10 @@
         </div>
 
         <!-- check box and photo grid main -->
-        <div id="category">
+        <div id="category" class="flex flex-row gap-4">
           <!-- checkbox div -->
-        <div id="checks">
-          <p>Category</p>
+        <div id="checks" class="hidden w-48 md:block">
+          <p class="mb-2 font-bold">Category</p>
 
           <div id="checkx">
             <div id="1-peopl">
@@ -152,9 +152,9 @@
             <label for="nature">People</label>
             </div>
 
-            <hr>
+            <hr class="my-4">
 
-            <p>Price range</p>
+            <p class="mb-2 font-bold">Price range</p>
 
             <!-- price range -->
             <div id="price-range">
@@ -192,8 +192,66 @@
 
 
         <!-- grid box display of photos -->
-        <div id="pict-main">
+        <div id="pict-main" class="grid grid-cols-1 w-full mx-8 mt-4 md:4/5 md:grid-cols-3 gap-4 md:mt-0 md:mx-0">
+          <!-- red bench people -->
+            <div id="photo-grid" class="">
+              <div id="pic-relative" class="relative">
+              <img src="/asset/Rectangle2.png" alt="people-pics" class="w-80 md:w-64 md:h-80">
+              <figcaption class="absolute top-0 left-0 bg-white text-sm p-1">Best Seller </figcaption>
+              </div>
+              <button class="md:block bg-black text-white p-2 w-80 md:w-64">Add to Cart</button>
+              
+              <p class="text-sm text-gray-400 mt-2">People</p>
+              <p class="font-bold">RedBench</p>
+              <span class="text-sm text-gray-400">$3.89</span>
+            </div>
 
+            <!-- Egg ballon -->
+            <div id="photo-grid">
+              <img src="/asset/Rectangle2.1.png" alt="Egg-Balloon" class="w-80 md:w-64 md:h-80">
+              <button class="md:block bg-black text-white p-2 w-80 md:w-64">Add to Cart</button>
+
+              <p class="text-sm text-gray-400 mt-2">Food</p>
+              <p class="font-bold">Egg Balloon</p>
+              <span class="text-sm text-gray-400">$83.89</span>
+            </div>
+
+            <!-- second balloon pics -->
+            <div id="photo-grid">
+              <img src="/asset/Rectangle2.1.png" alt="Egg-Balloon" class="w-80 md:w-64 md:h-80">
+              <button class="md:block bg-black text-white p-2 w-80 md:w-64">Add to Cart</button>
+              <p class="text-sm text-gray-400 mt-2">Food</p>
+              <p class="font-bold">Egg Balloon</p>
+              <span class="text-sm text-gray-400">$83.89</span>
+            </div>
+
+            <!-- mans pic -->
+            <div id="photo-grid">
+              <img src="/asset/Rectangle2.4.png" alt="Man-pic" class="w-80 md:w-64 md:h-80">
+              <button class="md:block bg-black text-white p-2 w-80 md:w-64">Add to Cart</button>
+
+              <p class="text-sm text-gray-400 mt-2">People</p>
+              <p class="font-bold">Man</p>
+              <span class="text-sm text-gray-400">$100.00</span>
+            </div>
+            <!-- images for landmark -->
+            <div id="photo-grid">
+              <img src="/asset/Rectangle25.png" alt="Architecture" class="w-80 md:w-64 md:h-80">
+              <button class="md:block bg-black text-white p-2 w-80 md:w-64">Add to Cart</button>
+
+              <p  class="text-sm text-gray-400 mt-2">LandMark</p>
+              <p class="font-bold">Architecture</p>
+              <span class="text-sm text-gray-400">$ 101.00</span>
+            </div>
+
+            <div id="photo-grid">
+              <img src="/asset/Rectangle25.png" alt="Architecture" class="w-80 md:w-64 md:h-80">
+              <button class="md:block bg-black text-white p-2 w-80 md:w-64">Add to Cart</button>
+              
+              <p class="text-sm text-gray-400 mt-2">Land Mark</p>
+              <p class="font-bold">Architecture</p>
+              <span class="text-sm text-gray-400">$101.00</span>
+            </div>
         </div>
         </div>
         
